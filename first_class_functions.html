@@ -1,0 +1,23 @@
+<script>
+
+    //Callback function ---
+    const myName = () => {
+        return "hello";
+    }
+    const greeting = (sayHi, name) => {
+        console.log(sayHi() + " " +name);
+    }
+    greeting(myName, 'Navin');
+
+    //Returning functions ---
+    function a(){
+        return function b(){
+            console.log("Hello how are you ?!");
+        }
+    }
+    a()();
+    //OR
+    const c = a();
+    c();
+
+</script>

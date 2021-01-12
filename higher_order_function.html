@@ -1,0 +1,36 @@
+<script>
+
+    const interviewQuestions = (name) => {
+        if(name === "Navin") {
+            return function (topic){
+                console.log(`Hi ${name} !! What is ${topic} pls explain`);
+            }
+        }
+        else if(name === "Kumar") {
+            return function (topic){
+                console.log(`Hi ${name} !! What is ${topic} pls explain`);
+            }
+        }
+        else if(name === "Yadav") {
+            return function (topic){
+                console.log(`Hi ${name} !! What is ${topic} pls explain`);
+            }
+        }
+        else {
+            return function(){
+                console.log('Welcome to the interview');
+            }
+        }
+    }
+
+    // interviewQuestions('Navin')('Java');
+    // interviewQuestions('Kumar')('Javascript');
+    // interviewQuestions('Yadav')('PHP');
+    // interviewQuestions('test')('');
+
+    const cand1 = interviewQuestions('Navin');
+    cand1('Java');
+    cand1('Full Stack');
+    cand1('Python');
+
+</script>

@@ -1,0 +1,27 @@
+<script>
+
+    const getRollNo = (rollno) => {
+        setTimeout(() => {
+            console.log(`The roll no is ${rollno}`);
+
+            setTimeout((rollno) => {
+                const biodata = {
+                    name: 'Navin',
+                    age: 34,
+                    gender: 'male'
+                }
+                console.log(`My roll no is ${rollno} and name is ${biodata.name} and age is ${biodata.age} years`);
+                
+                setTimeout((gender) => {
+                    console.log(`I am a ${gender}`)
+                }, 2000, biodata.gender);
+
+            }, 2000,rollno);
+
+        }, 2000);
+        
+    }
+
+    getRollNo(20);
+
+</script>

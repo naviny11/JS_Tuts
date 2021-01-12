@@ -1,0 +1,33 @@
+<script>
+    // The bind() method takes an object as first argument and creates a new function
+
+    function features(rating){
+            console.log(`My fav youtuber name is ${this.name} and content is ${this.content} and rating is ${rating}`)
+        }
+    
+    const youtuber1 = {
+        name: 'Navin',
+        content: 'Technical'
+    }
+
+    const youtuber2 = {
+        name: 'Kumar',
+        content: 'Entertainment'
+    }
+
+    const youtuber3 = {
+        name: 'Yadav',
+        content: 'Vlog'
+    }
+
+
+    let you1 = features.bind(youtuber1);
+    you1(5);
+
+    let you2 = features.bind(youtuber2);
+    you2(25);
+
+    let you3 = features.bind(youtuber3);
+    you3(45);
+
+</script>

@@ -1,0 +1,27 @@
+<script>
+
+    const youtuber1 = {
+        name: 'Navin',
+        content: 'Technical videos',
+        feature: function(rating, support) {
+            console.log(`very friendly way of teaching -- ${this.name} 
+            is my fav ${this.content} channel and 
+            this is the rating - ${rating}. Please ${support} this`)
+        }
+    }
+
+    youtuber1.feature('10', 'subscribe');
+
+    const youtuber2 = {
+        name: "Kumar",
+        content: "Entertainment"
+    }
+
+    youtuber1.feature.call(youtuber2, 5, 'like');
+    youtuber1.feature.apply(youtuber2, [5, 'like']);
+
+    let max = Math.max(3,10,5)
+    console.log(`the max is  -- ${max}`)
+    let max1 = Math.max.apply(null,[6,4,8,10,2,15]);
+    console.log(`the max is  -- ${max1}`)
+</script>

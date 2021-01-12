@@ -1,0 +1,28 @@
+<script>
+
+    const arrProg = ['Java', 'PHP', 'VB', 'Javascript'];
+
+    arrProg.forEach(function(currValue, index){
+        console.log(index +' == '+ currValue);
+    });
+
+    for(items of arrProg){
+        console.log(items);
+    }
+
+    const bioData = {
+        name: 'Navin',
+        age: '30',
+        tech: 'Javascript'
+    }
+
+    for (props in bioData){
+        console.log(props);
+    }
+
+    const newArr = [10,20,30,40,50];
+
+    newArr.forEach(function(val, index, arr){
+        console.log(val+100);
+    })
+</script>

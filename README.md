@@ -1,1 +1,1 @@
-# JS_Tuts
+Repository contains JS concepts tutorials
